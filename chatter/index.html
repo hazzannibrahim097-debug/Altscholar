@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chatter: A haven for text-based content</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#home" class="logo">CHATTER</a>
+  <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-wrap" id="nav">
+    <nav class="nav-links" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About us</a>
+      <a href="#contact">Contact</a>
+      <a href="#blogs">Blogs</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#login" class="btn btn-outline">Log in</a>
+      <a href="#signup" class="btn btn-solid">Sign up</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to Chatter: A Haven for Text-Based Content</h1>
+      <p>Unleash the Power of Words, Connect with Like-minded Readers and Writers</p>
+      <a href="#signup" class="btn btn-solid">Get started</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>About Chatter</h2>
+      <p>Chatter is a multi-functional platform where authors and readers can have access to their own content. It aims to be a traditional bookworm’s heaven and a blog to get access to more text based content. Our vision is to foster an inclusive and vibrant community where diversity is celebrated. We encourage open-mindedness and respect for all individuals, regardless of their backgrounds or beliefs. By promoting dialogue and understanding, we strive</p>
+    </div>
+    <img src="images/about.jpg" alt="Readers sitting on a wide library staircase" class="about-img">
+  </section>
+
+  <section class="why" id="blogs">
+    <h2>Why you should join chatter</h2>
+    <p class="why-intro">Our goal is to make writers and readers see our platform as their next heaven for blogging, ensuring ease in interactions, connecting with like-minded peers, have access to favorite content based on interests and able to communicate your great ideas with people</p>
+    <div class="cards">
+      <article class="card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+        </div>
+        <h3>Analytics</h3>
+        <p>Analytics to track the number of views, likes and comment and also analyze the performance of your articles over a period of time</p>
+      </article>
+      <article class="card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="#222" aria-hidden="true"><circle cx="5" cy="9" r="2"/><circle cx="9.5" cy="5" r="2"/><circle cx="14.5" cy="5" r="2"/><circle cx="19" cy="9" r="2"/><path d="M12 11c-3 0-6 3.2-6 5.6 0 1.6 1.2 2.4 2.7 2.4 1.2 0 2-.5 3.3-.5s2.100.5 3.300.5c1.500 0 2.700-.8 2.700-2.400C18 14.200 15 11 12 11z"/></svg>
+        </div>
+        <h3>Social interactions</h3>
+        <p>Users on the platform can interact with posts they like, comment and engage in discussions</p>
+      </article>
+      <article class="card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h4M7 16h4"/><rect x="13" y="11" width="4" height="5"/></svg>
+        </div>
+        <h3>Content creation</h3>
+        <p>Write nice and appealing with our in-built markdown, a rich text editor</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <img src="images/testimonial.jpg" alt="Portrait of Adebobola Muhydeen" class="testimonial-img">
+    <div class="testimonial-text">
+      <blockquote>“Chatter has become an integral part of my online experience. As a user of this incredible blogging platform, I have discovered a vibrant community of individuals who are passionate about sharing their ideas and engaging in thoughtful discussions.”</blockquote>
+      <p class="author"><strong>Adebobola Muhydeen,</strong> <span>Software developer at Apple</span></p>
+      <a href="#signup" class="btn btn-solid">Join chatter</a>
+    </div>
+  </section>
+
+  <section class="connect">
+    <div class="avatars" aria-hidden="true">
+      <img src="images/avatar1.jpg" alt="" class="av av1">
+      <img src="images/avatar2.jpg" alt="" class="av av2">
+      <img src="images/avatar3.jpg" alt="" class="av av3">
+    </div>
+    <div class="connect-text">
+      <h2>Write, read and connect with great minds on chatter</h2>
+      <p>Share people your great ideas, and also read write-ups based on your interests. connect with people of same interests and goals</p>
+      <a href="#signup" class="btn btn-solid">Get started</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <a href="#home" class="logo">CHATTER</a>
+  <div class="footer-col">
+    <h4>Explore</h4>
+    <a href="#">community</a>
+    <a href="#">Trending blogs</a>
+    <a href="#">Chatter for teams</a>
+  </div>
+  <div class="footer-col">
+    <h4>Support</h4>
+    <a href="#">Support docs</a>
+    <a href="#">Join slack</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="footer-col">
+    <h4>Official blog</h4>
+    <a href="#">Official blog</a>
+    <a href="#">Engineering blog</a>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', false);
+  }));
+</script>
+</body>
+</html>

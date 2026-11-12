@@ -1,0 +1,126 @@
+:root{
+  --purple:#543ee0;
+  --purple-dark:#4430c4;
+  --cream:#fff5e5;
+  --ink:#1a1a1a;
+  --grey:#7a7a7a;
+  --border:#d0d0d0;
+  --icon-bg:#f4f2ff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--purple);outline-offset:3px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;font:500 16px/1 "DM Sans",sans-serif;padding:18px 28px;border-radius:4px;cursor:pointer;transition:background .2s,color .2s}
+.btn-solid{background:var(--purple);color:#fff;border:1px solid var(--purple)}
+.btn-solid:hover{background:var(--purple-dark)}
+.btn-outline{background:#fff;color:var(--ink);border:1px solid var(--purple)}
+.btn-outline:hover{background:var(--icon-bg)}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:20;height:98px;display:flex;align-items:center;justify-content:space-between;padding:0 72px;background:#fff;border-bottom:1px solid var(--border)}
+.logo{font-size:44px;font-weight:500;letter-spacing:.5px;color:var(--purple);line-height:1}
+.nav-wrap{display:flex;align-items:center;flex:1;justify-content:space-between;margin-left:80px}
+.nav-links{display:flex;gap:26px;margin:0 auto;font-size:15px;font-weight:500}
+.nav-links a:hover{color:var(--purple)}
+.nav-actions{display:flex;gap:24px}
+.nav-actions .btn{padding:0;width:158px;height:56px}
+.nav-actions .btn-solid{width:158px}
+.menu-toggle{display:none;background:none;border:0;cursor:pointer;width:40px;height:40px;flex-direction:column;justify-content:center;gap:6px;align-items:center}
+.menu-toggle span{display:block;width:26px;height:3px;background:var(--purple);border-radius:2px}
+
+/* Hero */
+.hero{background:url("images/hero.jpg") center/cover no-repeat;min-height:764px;display:flex;align-items:center;padding:0 72px}
+.hero-content{padding-left:156px;color:#fff;max-width:1000px}
+.hero h1{font-size:46px;line-height:1.55;font-weight:500;max-width:840px}
+.hero p{font-size:24px;line-height:1.5;margin:28px 0 40px;max-width:760px;font-weight:400}
+.hero .btn{padding:20px 28px}
+
+/* About */
+.about{display:grid;grid-template-columns:1fr 500px;gap:60px;align-items:start;padding:130px 72px 100px;max-width:1440px;margin:0 auto}
+.about h2{font-size:46px;font-weight:500;margin-bottom:42px;line-height:1.2}
+.about p{font-size:16px;line-height:1.7;max-width:690px}
+.about-img{width:500px;height:405px;object-fit:cover;border-radius:8px}
+
+/* Why */
+.why{max-width:1240px;margin:0 auto;padding:60px 72px 120px}
+.why h2{text-align:center;font-size:46px;font-weight:500;line-height:1.2;margin-bottom:40px}
+.why-intro{font-size:16px;line-height:1.75;max-width:1040px;margin:0 auto 56px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;max-width:1030px;margin:0 auto}
+.card{border:1px solid var(--border);border-radius:8px;padding:14px 18px 28px;min-height:324px}
+.icon{width:92px;height:92px;border-radius:50%;background:var(--icon-bg);display:grid;place-items:center;margin-bottom:16px;margin-left:-6px;margin-top:-8px}
+.card h3{font-size:24px;font-weight:500;margin-bottom:14px;line-height:1.3}
+.card p{font-size:16px;color:var(--grey);line-height:1.7}
+
+/* Testimonial */
+.testimonial{background:var(--cream);display:flex;align-items:center;gap:40px;padding:60px 84px;min-height:495px}
+.testimonial-img{width:300px;height:300px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.testimonial-text{flex:1;max-width:940px}
+.testimonial blockquote{font-size:16px;line-height:1.7;margin-bottom:42px}
+.author{font-size:16px;margin-bottom:28px}
+.author strong{font-size:24px;font-weight:500}
+.testimonial .btn{padding:20px 28px}
+
+/* Connect */
+.connect{display:grid;grid-template-columns:480px 1fr;gap:20px;align-items:center;max-width:1440px;margin:0 auto;padding:110px 72px 120px}
+.avatars{position:relative;height:420px;margin-left:80px}
+.av{position:absolute;width:155px;height:155px;border-radius:50%;object-fit:cover}
+.av1{top:0;left:0}
+.av2{top:128px;left:198px}
+.av3{top:254px;left:0}
+.connect h2{font-size:46px;font-weight:500;line-height:1.5;margin-bottom:28px;max-width:680px}
+.connect p{font-size:16px;line-height:1.7;max-width:600px;margin-bottom:28px}
+.connect .btn{padding:20px 28px}
+
+/* Footer */
+.site-footer{background:var(--cream);display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:40px;padding:50px 84px 200px;align-items:start}
+.site-footer .logo{font-size:44px}
+.footer-col{display:flex;flex-direction:column;gap:20px;font-size:16px}
+.footer-col h4{font-size:24px;font-weight:500;margin-bottom:8px;line-height:1.3}
+.footer-col a:hover{color:var(--purple)}
+
+/* Tablet */
+@media (max-width:1100px){
+  .site-header{padding:0 32px}
+  .nav-wrap{margin-left:32px}
+  .nav-actions{gap:12px}
+  .nav-actions .btn,.nav-actions .btn-solid{width:120px}
+  .hero{padding:0 32px}
+  .hero-content{padding-left:0}
+  .hero h1{font-size:38px}
+  .about{grid-template-columns:1fr;padding:80px 32px}
+  .about-img{width:100%;max-width:560px;height:auto;aspect-ratio:500/405}
+  .why{padding:40px 32px 80px}
+  .cards{gap:24px}
+  .testimonial{padding:60px 32px}
+  .connect{grid-template-columns:1fr;padding:80px 32px}
+  .avatars{margin:0 auto 20px;width:360px;max-width:100%}
+  .site-footer{grid-template-columns:1fr 1fr;padding:50px 32px 80px}
+}
+
+/* Mobile */
+@media (max-width:760px){
+  .site-header{height:72px;padding:0 20px}
+  .logo,.site-footer .logo{font-size:32px}
+  .menu-toggle{display:flex}
+  .nav-wrap{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);flex-direction:column;align-items:stretch;gap:20px;padding:24px 20px;margin:0}
+  .nav-wrap.open{display:flex}
+  .nav-links{flex-direction:column;gap:18px;margin:0;font-size:17px}
+  .nav-actions .btn,.nav-actions .btn-solid{flex:1;width:auto;height:52px}
+  .hero{min-height:560px;padding:0 20px}
+  .hero h1{font-size:30px}
+  .hero p{font-size:18px}
+  .about h2,.why h2,.connect h2{font-size:32px}
+  .cards{grid-template-columns:1fr}
+  .card{min-height:0}
+  .testimonial{flex-direction:column;text-align:left;align-items:flex-start;padding:48px 20px}
+  .testimonial-img{width:200px;height:200px}
+  .author strong{display:block;font-size:20px}
+  .connect{padding:60px 20px}
+  .site-footer{grid-template-columns:1fr;padding:40px 20px 60px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
